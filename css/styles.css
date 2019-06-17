@@ -1,0 +1,206 @@
+body{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+/* h3{
+  font-size:1.5rem;
+} */
+
+p{
+  color: #8F8F8F;
+}
+
+/* -------------------------------- Dealing with the Heading Section ---------------------- */
+.big-heading{
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+  /*margin-top: 20%;
+  margin-bottom: 10%;*/
+  /*color: white;*/
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* --------------------------- Containers---------------------------------------- */
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* --------------------------- Color Section --------------------------------- */
+.colored-section{
+  background-color: #FF4C68;
+  color: #FFF;
+}
+
+.white-section{
+  background-color:#FFF;
+}
+
+/* ----------------This addresses the Navigation Bar------------------ */
+.navbar{
+  /* This adds padding between the text and the bottom margin to
+  push all the content below it a bit more down
+  padding-bottom: 4.5rem*/
+
+  /* However, now we want no padding on top, left, right, so that the
+  navbar can align with the text precisely */
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+  /* This changes the styling of the tindog brand/logo */
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  /* This allows the items in the navigation such as Contact and
+  Pricing to be a bit more spaced out between the left and right areas */
+  padding: 0 18px;
+}
+
+.nav-link{
+  /* This changes the syling of the links of Contact and Pricing so that
+  they are less prominent on the screen and more focus is towards the
+  brand/logo */
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* ---------------------------------- Title Section ------------------------------------- */
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/*------------------- Dealing with the Download Button--------------------- */
+.download-button{
+  margin: 5% 3% 5% 0;
+  /* margin: 0 5px 20px 35px; */
+}
+
+/*----------------- Dealing with the Title Image of the dog phone------------ */
+.title-image{
+  /* 60% of the parent width (the parent of the img is "containing div col-lg-6")*/
+  /* 60% of the width makes its narrower */
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+
+/* ------------------ Dealing with Features Section ----------------------- */
+#features{
+  background-color: #FFF;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.feature-box{
+  padding: 4.5%;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+.icon{
+  color: #EF8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  color: #FF4C68;
+}
+
+/* ------------------ Dealing with the Testimonials Section ----------------- */
+#testimonials{
+  background-color: #EF8172;
+}
+
+.testimonial-image{
+  width: 10%;
+  /* Makes image circular */
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* ----------------- Dealing with the Press Section ------------------------- */
+
+#press{
+  background-color: #EF8172;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  /* 20px top, 20px left and right, 50px bottom */
+  margin: 20px 20px 50px;
+}
+
+.press-header{
+  color: #FFF;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+/* ------------------- Dealing with Pricing Section ---------------------- */
+#pricing{
+  padding: 100px;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* --------------- Examples of media query to deal different viewports -------- */
+
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+
+.title-image{
+    /* The image cannot apply the z-index */
+    position: static;
+    /* Rotate back to original position */
+    transform: rotate(0);
+  }
+}
+
+/* -------------- Dealing with Call to Action Section -------------------- */
+.big-heading{
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* -------------- Dealing with the Footer Section ------------------------- */
+.social-icon{
+  margin: 30px 20px;
+  color: black;
+}
